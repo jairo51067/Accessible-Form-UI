@@ -1,0 +1,316 @@
+:root {
+  --font-family: "Roboto", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  /* Usar Flexbox */
+  justify-content: center;
+  /* Centra horizontalmente */
+  align-items: center;
+  /* Centra verticalmente */
+  flex-direction: column;
+  height: 100vh;
+  /* Altura completa de la ventana */
+  margin: 1% auto;
+  /* Quitar márgenes por defecto */
+  background-color: #e3edf7;
+  /* Color de fondo opcional */
+}
+
+header h1 {
+  text-align: center;
+  margin-bottom: 5%;
+}
+
+.contenedor {
+  width: 90%;
+  /* Ancho responsivo */
+  max-width: 850px;
+  /* Ancho máximo */
+  margin: 0% 3%;
+  padding: 0% 3%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: start;
+  box-shadow: 16px 16px 20px -1px rgba(0, 0, 0, 0.25),
+    -6px -6px 10px -1px rgba(255, 255, 255, 0.7);
+  border-radius: 10px;
+  background-color: #c9e2fc69;
+  /* Color de fondo opcional */
+}
+
+@media only screen and (max-width: 768px) {
+  body {
+    height: auto;
+  }
+
+  .contenedor {
+    width: 100%;
+    flex-direction: column;
+    gap: 80px;
+    margin-top: 5%;
+  }
+}
+
+/** FORMULARIO **/
+.formulario {
+  width: 100%;
+  margin: 2% 0%;
+  padding: 0% 2%;
+  flex-direction: column;
+  border-radius: 10px;
+  background-color: #c9e2fc; /* Color de fondo opcional */
+}
+
+form {
+  margin: 2% auto;
+  padding: 0%;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+form label{
+  display: block; 
+  margin-bottom: 3px;
+  margin-top: 3px;
+  font-family: var(--font-family);
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+form input {
+  width: 100%; /* make inputs full-width */
+  padding: 10px; /* add padding for better spacing */
+  margin-top: 3px; /* add margin between inputs */
+  border-radius: 5px;
+  border: none;
+  font-family: var(--font-family);
+}
+
+form span{
+  margin-top: 3px;
+  margin-bottom: 5px;
+  font-size: 0.8rem;
+  font-family: var(--font-family);
+  color: #000;
+}
+
+form button{
+  width: 50%;
+  margin: 2% auto;
+  padding: 10px 20px;
+  background-color: #337ab7;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: var(--font-family);
+}
+
+fieldset {
+  width: 100%; /* adjust the width to your liking */
+  margin: 3px auto; /* add margin to center the fieldset */
+  padding: 15px; /* add padding for better spacing */
+  border: 1px solid #979797; /* add a border for better visibility */
+  border-radius: 10px; /* add a rounded corner for a nicer look */
+}
+
+legend {
+  padding: 0px 10px 30px 10px ; /* add padding to the legend */
+  font-size: 1.2rem;
+  font-family: var(--font-family);
+  font-weight: bold;
+}
+
+.mostrarPassword{
+  width: 100%;
+  display: flex;
+  color: #000;
+}
+
+.mostrarPassword label {
+  width: 100%;
+  margin: 2% 2% 7% 0%;
+}
+
+.mostrarPassword input[type="checkbox"] {
+  width: 7%;
+  margin: 2% 2% 7% 0%;
+  cursor: pointer;
+}
+
+#error span {
+  display: flex;
+  justify-content: center;
+  animation: alerta 2s infinite;
+}
+
+@keyframes alerta {
+  0% { color: #ffff00; }
+  50% { color: #fff; }
+  100% { color: #ffff00; }
+}
+
+
+/**MODAL**/
+.modal {
+  /* Hidden by default */
+  display: none; 
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 300px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.90); /* Black w/ opacity */
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 60px;
+  border: 1px solid #888;
+  width: 50%;
+}
+
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/** GRAFICOS **/ 
+/* porcentaje de cumplimiento */
+.graficos {
+  width: 100%;
+  margin: 2% 0%;
+  padding: 0% 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.skill-habilidad {
+  width: 160px;
+  height: 160px;
+  position: relative;
+}
+
+.outer-exterior {
+  height: 160px;
+  width: 160px;
+  padding: 20px;
+  box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15), 
+  -6px -6px 10px -1px rgba(255, 255, 255, 0.7);
+  border-radius: 50%;
+}
+
+.inner-interior {
+  height: 120px;
+  width: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: inset 4px 4px 6px -1px rgba(0, 0, 0, 0.2), 
+  inset -4px -4px 6px -1px rgba(255, 255, 255, 0.7), 
+  -0.5px -0.5px 0px rgba(255, 255, 255, 1), 
+  0.5px 0.5px 0px rgba(0, 0, 0, 0.15), 
+  0px 12px 10px -10px rgba(0, 0, 0, 0.05);
+  border-radius: 50%;
+}
+
+#porcentajeCompletado {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #555;
+}
+
+circle {
+  fill: none;
+  stroke: url(#gradient-color);
+  stroke-width: 20px;
+  stroke-dasharray: 450;
+  stroke-dashoffset: 450;
+  transform: rotate(-90deg);
+  transform-origin: 50%;
+  opacity: 0.7;
+  animation: anim 4.2s linear forwards;
+}
+
+@keyframes anim {
+  100% {
+    /* calculo  450 - 450 x 0.65 to 65%*/
+    /* stroke-dashoffset: 157.5; */
+    /*to 65%*/
+
+    /* calculo  450 - 450 x 0.50 to 50%*/
+    /* stroke-dashoffset: 225; */
+    /* to 50% */
+
+    /* calculo  450 - 450 x 0.25 to 25%*/
+    /*stroke-dashoffset: 337.5;*/
+    /*to 25%*/
+
+    /* calculo  450 - 450 x 1 to 100%*/
+    stroke-dashoffset: 30;
+    /*to 100%*/
+  }
+}
+
+svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+
+/** LISTA DE CHEQUEO **/
+.listaDeChequeo {
+  width: 85%;
+  height: 370px;
+  margin: 7% 0% 0% 0%;
+  padding-top: 3%;
+  border-radius: 10px;
+  background-color: #c0c0c0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+}
+
+.listaDeChequeo ul {
+  list-style: none;
+  margin-top: 20px;
+}
+
+.listaDeChequeo li {
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+#requisito-completado1, #requisito-completado2{
+  text-decoration:line-through;
+}
