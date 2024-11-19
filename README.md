@@ -2,9 +2,12 @@
 Este proyecto consiste en un formulario diseñado para actualizar un perfil de usuario, centrado en la accesibilidad y la experiencia de usuario. Implementa validaciones en tiempo real, un sistema gráfico de progreso interactivo con SVG y un diseño moderno optimizado para navegadores actuales. Durante el desarrollo, se abordaron desafíos como la optimización para accesibilidad (atributos aria), el uso de tecnologías modernas para gráficos dinámicos y la gestión de estados en formularios complejos. Este proyecto muestra habilidad para combinar diseño funcional con prácticas modernas de desarrollo web.
 
 # Formulario Accesible - Actualizar Perfil
-[Enlace al proyecto](URL-del-proyecto)
-Visite mi formulario:  https://jairo51067.github.io/Accessible-Form-UI/
-![Imagen del proyecto](URL-de-la-imagen)
+[Enlace al proyecto](https://jairo51067.github.io/Accessible-Form-UI/)
+
+
+Imagen del proyecto 
+![Formulario Accesible](https://github.com/user-attachments/assets/616371fd-09e2-47ee-8c95-171c02c82d15)
+
 
 ## Descripción
 Este formulario permite a los usuarios actualizar su información de perfil de manera accesible y eficiente. Su propósito principal es demostrar cómo integrar buenas prácticas de accesibilidad, validación y diseño moderno en un formulario de uso cotidiano. Este proyecto fue inspirado por la necesidad de formularios más inclusivos y visualmente atractivos.
