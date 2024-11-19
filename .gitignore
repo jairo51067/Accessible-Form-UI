@@ -1,0 +1,66 @@
+# Archivos de configuración local
+config.local
+.env.local
+settings.json
+
+# Logs de npm o yarn
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Dependencias de Node.js
+node_modules/
+
+# Carpetas de distribución y compilación
+dist/
+build/
+out/
+
+# Archivos temporales
+*.tmp
+*.log
+*.swp
+
+# Archivos generados por editores
+.vscode/
+.idea/
+
+# Caché
+cache/
+
+# Certificados y claves privadas
+*.pem
+*.key
+*.crt
+
+# Archivos de resultados de pruebas
+*.result
+*.coverage
+
+# Archivos de sistema
+Thumbs.db
+.DS_Store
+
+# Documentos generados automáticamente
+*.docx
+*.pdf
+*.pptx
+
+# Configuración de Webpack
+webpack.config.js
+webpack.config.prod.js
+
+# Herramientas de linting
+.eslintrc*
+eslint_report.txt
+
+# Bases de datos locales
+db/
+
+# Archivos de configuración adicionales
+/public/
+*.babelrc
+
+# Documentos y otros archivos generados automáticamente
+7-Accessible Form UI.docx
+
